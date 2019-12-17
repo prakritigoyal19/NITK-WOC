@@ -1,0 +1,8 @@
+ifplugin Mail::SpamAssassin::Plugin::Pgnitk
+
+add_header all Test_Tag _PGNITKTAG_
+
+header PGNITK eval:pgnitk_testing()
+
+endif
+
